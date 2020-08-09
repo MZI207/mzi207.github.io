@@ -1,28 +1,30 @@
 body{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:#ffffff;
-    
-}
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    color: grey;
+    overflow-x: hidden;
+    font-family: Calibri, sans-serif;
 }
 
-#outer{
-    display: table;
-    position: absolute;
-    height: 100%;
-    width: 100%;
+.navbar{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: .3rem;
+    background-color: rgba(0, 0, 0, .7);
 }
-#middle{
-    display: table-cell;
-    vertical-align: middle;
+.navbar-nav li{
+    padding-right: 1rem;
 }
-#profile-pic{
-    width: 100px;
-    height: 100px;
-    background-image: url(../img/pfp.jpg);
-    background-position: center;
-    border-radius: 75px;
+.navbar-dark .navbar-nav .nav-link{
+    color: #ffffff!important;
+    padding-top: .3rem;
+}
+.navbar-dark .navbar-nav .nav-link.active{
+    color:#6495ED!important;
+} 
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:#6495ED!important;
+}
+/*About */
+.about-offset{
+    padding: 150px 0px 150px 0px;
+    background-color: #ffffff;
 }
