@@ -14,7 +14,7 @@ body{
     background-color: #ffffff;
 }
 .navbar-toggler-icon{
-    background-color: #000000!important;
+    background-color: #1766B5!important;
 }
 .navbar-nav li{
     padding-right: 1rem;
@@ -30,7 +30,7 @@ body{
     color:#1766B5!important;
 }
 .about-offset{
-    padding: 150px 0px 150px 0px;
+    padding: 150px 0px 50px 0px;
     background-color: #E9ECEF;
 }
 h1{
@@ -38,6 +38,7 @@ h1{
     font-size: 48px;
     color: #1766B5;
     font-weight: bold;
+    padding-bottom: 10px;
 }
 h2{
     font-family: "Lato", sans-serif;
@@ -69,4 +70,12 @@ p{
 }
 .about-me{
     padding-left: 50px;
+}
+.social-media i{
+    font-size: 32px;
+    margin: 5px;
+    color: #000000;
+}
+.social-media i:hover{
+    color: #1766B5;
 }
