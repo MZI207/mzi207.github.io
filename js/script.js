@@ -4,6 +4,20 @@ context.canvas.width =  window.innerWidth;
 context.canvas.height = window.innerHeight;
 let particleArr;
 
+//Mouse
+let mouse = {
+    x: null,
+    y: null,
+    radius: (canvas.height/120) * (canvas.width/120)
+}
+
+window.addEventListener('mousemove',
+    function(event){
+        mouse.x = event.x;
+        mouse.y = event.y;
+    }
+)
+
 //Particle constructor
 function Particle(x,y, directionX, directionY, size, color){
     this.x = x;
@@ -29,6 +43,26 @@ Particle.prototype.update = function(){
     if (this.y + this.size > canvas.height || this.y - this.size < 0){
         this.directionY = -this.directionY;
     }
+    //checks if the mouse is near the 
+    let dx = mouse.x - this.x;
+    let dy = mouse.y - this.y;
+    let distance = Math.sqrt(dx*dx + dy*dy);
+    if (distance < mouse.radius + this.size){
+        if (mouse.x < this.x && this.x < canvas.width - this.size * 10){
+            this.x += 1;
+        }
+        if (mouse.x > this.x && this.x > this.size * 10){
+            this.x -= 1;
+        }
+        if (mouse.y < this.y && this.y < canvas.width - this.size * 10){
+            this.y += 1;
+        }
+        if (mouse.y > this.y && this.y > this.size * 10){
+            this.y -= 1;
+        }
+        this.directionX = -this.directionX;
+        this.directionY = -this.directionY;
+    }
     this.x += this.directionX;
     this.y += this.directionY;
     this.draw();
@@ -40,8 +74,8 @@ function init(){
         let size = 5
         let x = Math.random() * (innerWidth - size * 2);
         let y = Math.random() * (innerHeight - size * 2);
-        let directionX = (Math.random() * .3) -.1;
-        let directionY = (Math.random() * .3) - .1;
+        let directionX = (Math.random() * .6) -.2;
+        let directionY = (Math.random() * .6) - .2;
         let color = 'white';
         particleArr.push(new Particle(x,y, directionX, directionY, size, color));
     }
