@@ -8,7 +8,7 @@ let particleArr;
 let mouse = {
     x: null,
     y: null,
-    radius: (canvas.height/120) * (canvas.width/120)
+    radius: (canvas.height/150) * (canvas.width/150)
 }
 
 window.addEventListener('mousemove',
