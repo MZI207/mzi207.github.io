@@ -12,7 +12,7 @@
 }
 body{
     overflow-x: hidden;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif!important;
     background-color: black;
 }
 
@@ -42,27 +42,30 @@ body{
     color:#1766B5!important;
 }
 .about-offset{
-    padding: 150px 0px 50px 0px;
+    padding: 120px 0px 0px 0px;
+}
+.container{
+    padding: 30px!important;
 }
 h1{
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif!important;
     font-size: 48px;
     font-weight: bold;
     padding-bottom: 10px;
 }
 h2{
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif!important;
     font-size: 36px;
     font-weight: bold;
 }
 h3{
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif!important;
     font-size: 20px!important;
     color: rgba(33, 37, 41,.7);
     font-weight: bold;
 }
 p{
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", sans-serif!important;
     font-size: 22px;
 }
 .profile{
