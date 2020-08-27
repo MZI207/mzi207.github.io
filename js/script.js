@@ -1,3 +1,4 @@
+//--- Background ---
 const canvas = document.getElementById("canvas-js");
 const context = canvas.getContext('2d');
 context.canvas.width =  window.innerWidth;
@@ -98,3 +99,4 @@ window.addEventListener('resize',
         init();
     }
 )
+//--- Terminal ---
