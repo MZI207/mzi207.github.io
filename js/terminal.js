@@ -58,13 +58,31 @@ var Terminal= (function(){
         }
     };
     var commands = {
+        education: function(){
+
+        },
+        hobbies: function(){
+
+        },
+        interests: function(){
+
+        },
+        employment: function(){
+
+        },
+        contact: function(){
+
+        },
         hi: function(){
-          return "<p class='output'> Hi There! </p>"
+          return "<p class='output'> Welcome! </p>"
         },
         help: function(){
             return "<p class='output'> Here are a list of commands and what they do: \
                     <br> &nbsp&nbsphi -- The terminal will greet you. \
                     "
+        },
+        command_not_found(){
+            return "<p class='output'> Command not found. Type 'help' for a list of commands.</p>"
         }
     }
     self.init = function(elem){
@@ -81,6 +99,9 @@ var Terminal= (function(){
                 var input = prompt.textContent.split(" ");
                 if (input[0] in self.commands){
                     run(elem, input[0], input);
+                }
+                else{
+                    run(elem, "command_not_found", "command_not_found");
                 }
                 resetPrompt(elem, prompt);
                 event.preventDefault();
