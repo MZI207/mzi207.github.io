@@ -57,8 +57,17 @@ var Terminal= (function(){
             selection.addRange(range);
         }
     };
-
-    self.init = function(elem, commands){
+    var commands = {
+        hi: function(){
+          return "<p class='output'> Hi There! </p>"
+        },
+        help: function(){
+            return "<p class='output'> Here are a list of commands and what they do: \
+                    <br> &nbsp&nbsphi -- The terminal will greet you. \
+                    "
+        }
+    }
+    self.init = function(elem){
         self.commands = commands;
         elem.addEventListener("keyup", function(event){
             if (historyIndex >= 0){
