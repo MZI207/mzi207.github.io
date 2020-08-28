@@ -135,12 +135,12 @@ p{
     color: #4d71a5;
     box-sizing: border-box;
     border-radius: 0px 0px 10px 10px;
+    overflow-y: auto;
 }
-
 #terminal .input{
     min-width: 10px;
     font-size: 16px;
-    height: 18px;
+    height: 22px;
     display: inline-block;
     border: none;
 }

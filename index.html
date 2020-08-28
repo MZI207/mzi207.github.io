@@ -79,13 +79,20 @@
               <div class="circle green"></div>
             </div>
             <div id="terminal">
-              <p>>>></p>
-              <p class="hidden">
-                <span class="prompt"><content></content></span>
+              <p>
+                <span>>>></span>
                 <span contenteditable="true" class="input"> </span>
               </p>
-            </div>
-
+          </div>
+          <script src="js/terminal.js"></script>
+          <script>
+            var commands = {
+              hi: function(){
+                return "<p> Hi There! </p>"
+              }
+            }
+            Terminal.init(document.getElementById("terminal"), commands)
+          </script>
           </div>
         </div>
       </div>
