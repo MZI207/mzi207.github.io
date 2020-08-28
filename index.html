@@ -26,7 +26,7 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#terminal1">Terminal</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#project">Projects</a>
@@ -71,30 +71,70 @@
             </div>
           </div>
         </div>
-        <div class="row terminal-offset">
-          <div class="col">
-            <div class="terminal-title">
-              <div class="circle red"></div>
-              <div class="circle yellow"></div>
-              <div class="circle green"></div>
-            </div>
-            <div id="terminal">
-              <p>
-                <span>>>></span>
-                <span contenteditable="true" class="input"> </span>
-              </p>
-          </div>
-          <script src="js/terminal.js"></script>
-          <script>
-            Terminal.init(document.getElementById("terminal"))
-          </script>
-          </div>
-        </div>
+        
       </div>
     </div>
     <!-- Skills -->
-    <div id="skills" class="offset">
-      
+    <div id="terminal1" class="offset">
+      <div class="row terminal-offset">
+        <div class="col">
+          <div class="terminal-title">
+            <div class="circle red"></div>
+            <div class="circle yellow"></div>
+            <div class="circle green"></div>
+          </div>
+          <div id="terminal">
+            <p>
+              <span>>>></span>
+              <span contenteditable="false" class="input">education</span>
+            </p>
+            <p class="output"> {<br> &nbsp;&nbsp;"School" : "New York University"
+                                <br> &nbsp;&nbsp;"Major" : "Computer Science"
+                                <br> &nbsp;&nbsp;"Minor" : ["Math", "Economics", "Physics"]
+                                <br> &nbsp;&nbsp;"Graduation" : "May 2021"
+                                <br> }                     
+            </p>
+            <p>
+              <span>>>></span>
+              <span contenteditable="false" class="input">employment</span>
+            </p>
+            <p class="output"> {<br> &nbsp;&nbsp;"August 2016 - Present" : "SHSAT Department Manager @ Khans Tutorial "
+                                <br> }                     
+            </p>
+            <p>
+              <span>>>></span>
+              <span contenteditable="false" class="input">languages</span>
+            </p>
+            <p class="output">
+              [ "Python", "C++", "Java", "JavaScript", "Haskell", "Verilog", "LaTex", "C", "HTML/CSS"]  
+            </p>
+            <p>
+              <span>>>></span>
+              <span contenteditable="false" class="input">programs</span>
+            </p>
+            <p class="output">
+              [ "Emacs", "Github", "Flask", "Adobe Photoshop Lightroom", "Lab-View", "Auto-CAD"]
+            </p>
+            <p>
+              <span>>>></span>
+              <span contenteditable="false" class="input">contact</span>
+            </p>
+            <p class="output">
+              [ <a href="mailto: mzi207@nyu.edu" target="_blank"> "mzi207@nyu.edu" </a> , 
+              <a href="https://www.linkedin.com/in/mohammed-iqbal-b26ba214b/" target="_blank"> "Mohammed Iqbal" </a>
+              ]
+            </p>
+            <p>
+              <span>>>></span>
+              <span contenteditable="true" class="input"></span>
+            </p>
+        </div>
+        <script src="js/terminal.js"></script>
+        <script>
+          Terminal.init(document.getElementById("terminal"))
+        </script>
+        </div>
+      </div>
     </div>
     <!-- Project -->
     <div id="project" class="offset">
