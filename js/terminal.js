@@ -59,27 +59,52 @@ var Terminal= (function(){
     };
     var commands = {
         education: function(){
-
+            return '<p class="output"> { \
+                        <br> &nbsp&nbsp"School" : "New York University"\
+                        <br> &nbsp&nbsp"Major" : "Computer Science" \
+                        <br> &nbsp&nbsp"Minor" : ["Math", "Economics", "Physics"] \
+                        <br> &nbsp&nbsp"Graduation" : "May 2021" \
+                        <br> } \
+                    </p>'
         },
         hobbies: function(){
-
+            return "<p class='output'>  </p>"
         },
         interests: function(){
-
+            return "<p class='output'> In development </p>"
         },
         employment: function(){
-
+            return '<p class="output"> {  \
+                        <br> &nbsp&nbsp"August 2016 - Present" : "SHSAT Department Manager @ Khans Tutorial " \
+                        <br> } \
+                    </p>'
         },
         contact: function(){
-
+            return '<p class="output">  \
+                        [ <a href="mailto: mzi207@nyu.edu" target="_blank"> "mzi207@nyu.edu" </a>, \
+                        <a href="https://www.linkedin.com/in/mohammed-iqbal-b26ba214b/" target="_blank"> "Mohammed Iqbal" </a>] \
+                    </p>'
+        },
+        languages: function(){
+            return '<p class="output">[ "Python", "C++", "Java", "JavaScript", "Haskell", "Verilog", "LaTex", "C", "HTML/CSS"]  </p>'
+        },
+        programs:function(){
+            return '<p class="output">[ "Emacs", "Github", "Flask", "Adobe Photoshop Lightroom", "Lab-View", "Auto-CAD"]  </p>'
         },
         hi: function(){
           return "<p class='output'> Welcome! </p>"
         },
         help: function(){
             return "<p class='output'> Here are a list of commands and what they do: \
-                    <br> &nbsp&nbsphi -- The terminal will greet you. \
-                    "
+                    <br> &nbsp&nbsphi -- The terminal will greet you\
+                    <br> &nbsp&nbspeducation -- List the educational institutions attended \
+                    <br> &nbsp&nbsphobbies -- List my hobbies\
+                    <br> &nbsp&nbspinterests -- List my interests\
+                    <br> &nbsp&nbspemployment -- List my employment\
+                    <br> &nbsp&nbspcontact -- List my contact information and ways to reach me\
+                    <br> &nbsp&nbsplanguages -- List the programming languages that I am experienced with\
+                    <br> &nbsp&nbspprograms -- List the programs that I have experience with\
+                    </p>"
         },
         command_not_found(){
             return "<p class='output'> Command not found. Type 'help' for a list of commands.</p>"
