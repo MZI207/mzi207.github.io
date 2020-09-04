@@ -8,7 +8,7 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/ef91e1fd68.js" crossorigin="anonymous"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&display=swap" rel="stylesheet">
 
     <title>Mohammed Iqbal</title>
   </head>
@@ -26,7 +26,7 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#terminal1">Terminal</a>
+            <a class="nav-link" href="#terminal">Terminal</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#project">Projects</a>
@@ -35,10 +35,10 @@
       </div>
     </nav>
     <canvas id="canvas-js"></canvas>
+    <div id="about"class="about-offset"></div>
+    <div class="container">
     <!-- About -->
-    
-    <div id="about" class="about about-offset">
-      <div class="container">
+      <div id="about" class="about">
         <div class="row">
           <div class="col-lg-3">
             <div class="profile">
@@ -59,86 +59,128 @@
             <div class="about-me">
               <h1> About Me</h1>
               <p>
-                Hello! I am an undergraduate student at New York University pursuing
-                a Bachelor of Science in Computer Science, and a triple minor in Economics, Mathematics, and Physics. I'm interested in 
-                building technologies that would impact socio-economic issues, especially issues that relate to equity, accessibility and 
-                privacy. 
+                &nbsp;&nbsp;&nbsp;&nbsp;Hello! My name is Mohammed Iqbal and I am an undergraduate student at New York University pursuing a Bachelor of Science in Computer Science, and a triple minor in Economics, Mathematics, and Physics. I'm interested in building technologies that would impact socio-economic issues, especially issues that relate to equity, accessibility and privacy.
               </p>
               <p>
-                I am interested in learning and developing my skills as a developer and a tech enthusiast. 
-                
+                &nbsp;&nbsp;&nbsp;&nbsp;I am exploring my passions as a developer and a tech enthusiast as I am currently building multiple projects built around accessibility and education. One of the projects that I am currently working on is Notation, a note-taking application designed around providing accessible features for students with disabilities and assisting educators. 
+              </p>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;I am currently working as a SHSAT Department Manager at Khan’s Tutorial where I have developed and maintained a database which was used to keep track of students progress. Furthermore, I worked on applications used to aid and develop students' skills providing useful feedback via diagnostics and other performance measures. 
+              </p>
+              <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;While I am not busy working or studying you can catch me listening to lofi beats, cooking a gorgeous meal or going outside to work out and stay active. 
               </p>
             </div>
           </div>
         </div>
-        
       </div>
-    </div>
-    <!-- Skills -->
-    <div id="terminal1" class="offset">
-      <div class="row terminal-offset">
-        <div class="col">
-          <div class="terminal-title">
-            <div class="circle red"></div>
-            <div class="circle yellow"></div>
-            <div class="circle green"></div>
+    <!-- Terminal -->
+      <div id="terminal">
+        <div class="row terminal-offset">
+          <hr>
+          <div class="col">
+            <div class="terminal-title">
+              <div class="circle red"></div>
+              <div class="circle yellow"></div>
+              <div class="circle green"></div>
+            </div>
+            <div class="terminal-box" id="terminal-box">
+              <p>
+                <span>>>></span>
+                <span contenteditable="false" class="input">education</span>
+              </p>
+              <p class="output"> {<br> &nbsp;&nbsp;"School" : "New York University"
+                                  <br> &nbsp;&nbsp;"Major" : "Computer Science"
+                                  <br> &nbsp;&nbsp;"Minor" : ["Math", "Economics", "Physics"]
+                                  <br> &nbsp;&nbsp;"Graduation" : "May 2021"
+                                  <br> }                     
+              </p>
+              <p>
+                <span>>>></span>
+                <span contenteditable="false" class="input">employment</span>
+              </p>
+              <p class="output"> {<br> &nbsp;&nbsp;"August 2016 - Present" : "SHSAT Department Manager @ Khans Tutorial "
+                                  <br> }                     
+              </p>
+              <p>
+                <span>>>></span>
+                <span contenteditable="false" class="input">languages</span>
+              </p>
+              <p class="output">
+                [ "Python", "C++", "Java", "JavaScript", "Haskell", "Verilog", "LaTex", "C", "HTML/CSS"]  
+              </p>
+              <p>
+                <span>>>></span>
+                <span contenteditable="false" class="input">programs</span>
+              </p>
+              <p class="output">
+                [ "Emacs", "Git", "Flask", "Adobe Photoshop Lightroom", "Lab-View", "Auto-CAD"]
+              </p>
+              <p>
+                <span>>>></span>
+                <span contenteditable="false" class="input">contact</span>
+              </p>
+              <p class="output">
+                [ <a href="mailto: mzi207@nyu.edu" target="_blank"> "mzi207@nyu.edu" </a> , 
+                <a href="https://www.linkedin.com/in/mohammed-iqbal-b26ba214b/" target="_blank"> "Mohammed Iqbal" </a>
+                ]
+              </p>
+              <p>
+                <span>>>></span>
+                <span contenteditable="true" class="input"></span>
+              </p>
           </div>
-          <div id="terminal">
-            <p>
-              <span>>>></span>
-              <span contenteditable="false" class="input">education</span>
-            </p>
-            <p class="output"> {<br> &nbsp;&nbsp;"School" : "New York University"
-                                <br> &nbsp;&nbsp;"Major" : "Computer Science"
-                                <br> &nbsp;&nbsp;"Minor" : ["Math", "Economics", "Physics"]
-                                <br> &nbsp;&nbsp;"Graduation" : "May 2021"
-                                <br> }                     
-            </p>
-            <p>
-              <span>>>></span>
-              <span contenteditable="false" class="input">employment</span>
-            </p>
-            <p class="output"> {<br> &nbsp;&nbsp;"August 2016 - Present" : "SHSAT Department Manager @ Khans Tutorial "
-                                <br> }                     
-            </p>
-            <p>
-              <span>>>></span>
-              <span contenteditable="false" class="input">languages</span>
-            </p>
-            <p class="output">
-              [ "Python", "C++", "Java", "JavaScript", "Haskell", "Verilog", "LaTex", "C", "HTML/CSS"]  
-            </p>
-            <p>
-              <span>>>></span>
-              <span contenteditable="false" class="input">programs</span>
-            </p>
-            <p class="output">
-              [ "Emacs", "Github", "Flask", "Adobe Photoshop Lightroom", "Lab-View", "Auto-CAD"]
-            </p>
-            <p>
-              <span>>>></span>
-              <span contenteditable="false" class="input">contact</span>
-            </p>
-            <p class="output">
-              [ <a href="mailto: mzi207@nyu.edu" target="_blank"> "mzi207@nyu.edu" </a> , 
-              <a href="https://www.linkedin.com/in/mohammed-iqbal-b26ba214b/" target="_blank"> "Mohammed Iqbal" </a>
-              ]
-            </p>
-            <p>
-              <span>>>></span>
-              <span contenteditable="true" class="input"></span>
-            </p>
-        </div>
-        <script src="js/terminal.js"></script>
-        <script>
-          Terminal.init(document.getElementById("terminal"))
-        </script>
+          <script src="js/terminal.js"></script>
+          <script>
+            Terminal.init(document.getElementById("terminal-box"))
+          </script>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Project -->
-    <div id="project" class="offset">
-      
+      <!-- Project -->
+      <div id="project" class="project-offset">
+        <div class="row">
+          <div class="col-lg-4 section-heading">
+              <h1>Projects</h1>
+          </div>
+          <div class="col-lg-8">
+              <div class="project-item">
+                <div class="project-item-right">Sept 2017 - Dec 2017</div>
+                <div class="project-item-title"> Autonomous Mars Rover Robot </div> 
+                <div class="project-item-text">
+                  • Collaborated with a team of three, designing an autonomous robot that traversed a course mimicking the landscape of mars to collect soil and
+                  water samples <br>
+                  • <b> Programs and Tools: </b> Auto-CAD, Lab-View, Arduino, C
+                </div>
+              </div>
+              <div class="project-item">
+                <div class="project-item-right">Oct 2019 - Jan 2020</div>
+                <div class="project-item-title"> Finstagram </div> 
+                <div class="project-item-text">
+                  • Developed a web-application that allows users to follow other users and post and share photos with their followers. <br>
+                  • Developed a database that maintained and stored  <br>
+                  • <b> Programs and Tools: </b> Python, Flask, SQL, HTML/CSS
+                </div>
+              </div>
+              <div class="project-item">
+                <div class="project-item-right">Mar 2020 - Present</div>
+                <div class="project-item-title"> Algorithm Visualizer </div> 
+                <div class="project-item-text">
+                  • Developing a web-application that visualizes basic computer science sorting algorithms to help understand how various algorithms work<br>
+                  • <b> Programs and Tools: </b> Python, JavaScript HTML/CSS
+                </div>
+              </div>
+              <div class="project-item">
+                <div class="project-item-right">Feb 2020 - Present</div>
+                <div class="project-item-title"> Notation </div> 
+                <div class="project-item-text">
+                  • Developing a web-application that allows for a clean and organized way to take notes whilst providing unique features<br>
+                  • <b> Programs and Tools: </b> JavaScript, HTML/CSS
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Scripts source files -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

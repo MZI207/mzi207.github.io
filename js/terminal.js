@@ -64,6 +64,7 @@ var Terminal= (function(){
                         <br> &nbsp&nbsp"Major" : "Computer Science" \
                         <br> &nbsp&nbsp"Minor" : ["Math", "Economics", "Physics"] \
                         <br> &nbsp&nbsp"Graduation" : "May 2021" \
+                        <br> &nbsp&nbsp"Prior" : "Stuyvesant Highschool" \
                         <br> } \
                     </p>'
         },
@@ -89,7 +90,7 @@ var Terminal= (function(){
             return '<p class="output">[ "Python", "C++", "Java", "JavaScript", "Haskell", "Verilog", "LaTex", "C", "HTML/CSS"]  </p>'
         },
         programs:function(){
-            return '<p class="output">[ "Emacs", "Github", "Flask", "Adobe Photoshop Lightroom", "Lab-View", "Auto-CAD"]  </p>'
+            return '<p class="output">[ "Emacs", "Git", "Flask", "Adobe Photoshop Lightroom", "Lab-View", "Auto-CAD"]  </p>'
         },
         hi: function(){
           return "<p class='output'> Welcome! </p>"
